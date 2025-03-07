@@ -1,3 +1,11 @@
 <header>
   <h1>{{title}}</h1>
+  <input [(ngModel)]="inputText" placeholder="type something...">
+  <button (click)="resetInput()">Reset</button>
+
+  <button (click)="toggleMessage()">toggle message</button>
+  @if (showMessage){
+    <p>this is a toggled message</p>
+  }
+  <p>you typed: {{ inputText}}</p>
 </header>
