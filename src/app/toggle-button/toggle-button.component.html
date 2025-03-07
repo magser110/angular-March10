@@ -1,0 +1,9 @@
+
+<p>toggle-button works!</p>
+<button (click)="toggleButton()">
+  {{ isVisible ? 'hide' : 'show'}} content
+</button>
+
+@if (isVisible) {
+  <div>can you see me?</div>
+}
