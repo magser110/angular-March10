@@ -1,5 +1,7 @@
 <header>
   <h1>{{title}}</h1>
+  <button (click)="changeHeader()">change header</button>
+
   <input [(ngModel)]="inputText" placeholder="type something...">
   <button (click)="resetInput()">Reset</button>
 

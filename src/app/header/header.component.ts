@@ -21,4 +21,8 @@ export class HeaderComponent {
   toggleMessage() {
     this.showMessage = !this.showMessage;
   }
+
+  changeHeader() {
+    this.title = 'new header, yes?'
+  }
 }
