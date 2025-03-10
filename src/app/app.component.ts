@@ -7,11 +7,12 @@ import { InputFieldComponent } from './input-field/input-field.component';
 import { CounterComponent } from './counter/counter.component';
 import { ConditionalMessageComponent } from './conditional-message/conditional-message.component';
 import { ParentComponent } from './parent/parent.component';
+import { SubmittionComponent } from './submittion/submittion.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, FooterComponent, ToggleButtonComponent, InputFieldComponent,
-   CounterComponent, ConditionalMessageComponent, ParentComponent],
+   CounterComponent, ConditionalMessageComponent, ParentComponent, SubmittionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
