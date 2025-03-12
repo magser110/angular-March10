@@ -1,9 +1,17 @@
 <p>submittion works!</p>
 
-
 <input type="text" [(ngModel)]="usernameInput" placeholder="Username...">
 <input type="text" [(ngModel)]="emailInput" placeholder="email">
 <input type="text" [(ngModel)]="passwordInput" placeholder="password">
 
-<button (click)='userInput(usernameInput, emailInput, passwordInput)'> submit</button>
+<button (click)='userInfo(usernameInput, emailInput, passwordInput)'> submit</button>
 
+<!-- <div *ngIf="userInfo">
+  <h2>user info</h2>
+  <ul>
+    @for (userInfo of userInfo; track userInfo) {
+      <li>{{userInfo}}</li>
+    }
+  </ul>
+</div>
+<button (click)="addUserInfo()">show user info</button> -->

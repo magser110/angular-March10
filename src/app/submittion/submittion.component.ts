@@ -15,23 +15,28 @@ interface User {
   styleUrl: './submittion.component.css'
 })
 export class SubmittionComponent {
-
-
 usernameInput = ''
 emailInput = '';
 passwordInput = '';
 users = []
 
+userInfo: string[] =[this.usernameInput, this.emailInput, this.passwordInput];
+showUserInfo: boolean = true;
 
-  userInput(usernameInput, emailInput, passwordInput){
-    this.users.push({usernameInput, emailInput,
-      passwordInput});
+addUserInfo(){
+  this.userInfo.push(`your info ${this.userInfo.length}`)
+}
 
-console.log(this.users);
+//   userInput(usernameInput, emailInput, passwordInput){
+//     this.users.push({usernameInput, emailInput,
+//       passwordInput});
+
+// console.log(this.users);
+
+
+
 
   }
 
 // you have access to the user input now if you create an array of items can you display them to the page
 
-
-}
